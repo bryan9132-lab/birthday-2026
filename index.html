@@ -162,16 +162,18 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 .photo-card img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;filter:sepia(10%) contrast(95%);transition:filter .3s}
 .photo-card img:hover{filter:sepia(0%) contrast(100%)}
 .photo-card-foot{padding:8px 10px;display:flex;justify-content:space-between;align-items:center;gap:8px}
-.photo-caption{font-size:11px;color:var(--text-dim);font-style:italic;flex:1;line-height:1.4;font-family:'Cormorant Garamond',serif}
+.photo-caption{font-size:15px;color:var(--cream);font-style:italic;flex:1;line-height:1.5;font-family:'Cormorant Garamond',serif}
 .photo-dl{background:var(--gold-dark);border:1px solid var(--gold);color:var(--gold-light);font-family:'Cinzel',serif;font-size:8px;letter-spacing:1px;padding:4px 8px;cursor:pointer;text-decoration:none;white-space:nowrap;transition:all .3s;flex-shrink:0}
 .photo-dl:hover{background:var(--gold);color:var(--parchment)}
 .dl-all-btn{display:block;width:100%;background:var(--surface);border:1px solid var(--border-light);color:var(--text-dim);font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;padding:10px;cursor:pointer;text-align:center;margin-top:16px;transition:all .3s}
 .dl-all-btn:hover{border-color:var(--gold);color:var(--gold-light)}
 .no-photos{font-family:'Noto Serif TC',serif;font-size:13px;color:var(--text-muted);text-align:center;padding:24px;font-style:italic}
-.pub-section-label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--text-muted);margin-bottom:10px}
-.pub-section-label-zh{font-family:'Noto Serif TC',serif;font-size:9px;color:var(--text-muted);margin-bottom:10px}
-.priv-section-label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--text-muted);margin:20px 0 10px}
-.priv-section-label-zh{font-family:'Noto Serif TC',serif;font-size:9px;color:var(--text-muted);margin:20px 0 10px}
+.pub-section-label{font-family:'Cinzel',serif;font-size:14px;letter-spacing:3px;color:var(--gold-light);margin-bottom:12px}
+.pub-section-label-zh{font-family:'Noto Serif TC',serif;font-size:15px;color:var(--gold-light);margin-bottom:12px}
+.priv-section-label{font-family:'Cinzel',serif;font-size:14px;letter-spacing:3px;color:var(--gold-light);margin:24px 0 12px}
+.priv-section-label-zh{font-family:'Noto Serif TC',serif;font-size:15px;color:var(--gold-light);margin:24px 0 12px}
+.gallery-section .section-title{font-size:18px;letter-spacing:5px;color:var(--gold-light)}
+.gallery-section .section-title-zh{font-size:20px;letter-spacing:4px;color:var(--gold-light)}
 @media(max-width:600px){.pub-photos-grid,.priv-photos-grid{grid-template-columns:1fr}}
 
 </style>
@@ -196,13 +198,6 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <div class="title-soiree zh-only">生辰宴</div>
     <div class="title-soiree en-only" style="font-style:italic;letter-spacing:2px">Birthday Soirée</div>
     <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
-  </div>
-
-  <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),var(--surface));border:1px solid var(--gold-dark);border-left:4px solid var(--gold);padding:24px 26px;margin:32px 0;font-size:14px;line-height:2;color:var(--cream);box-shadow:0 0 24px rgba(201,168,76,.08)" class="en-only">
-    Your kind thoughts mean the world — no gifts needed for the evening. Instead, a contribution of <strong style="color:var(--gold-light);font-size:16px">$1,500</strong> per guest will help cover the venue fee (transfer or cash on the day works). In return: <strong style="color:var(--gold-light)">3 complimentary cocktails</strong> per guest, plus mocktails for non-drinkers.
-  </div>
-  <div style="background:linear-gradient(135deg,rgba(201,168,76,.12),var(--surface));border:1px solid var(--gold-dark);border-left:4px solid var(--gold);padding:24px 26px;margin:32px 0;font-family:'Noto Serif TC',serif;font-size:14px;line-height:2.1;color:var(--cream);box-shadow:0 0 24px rgba(201,168,76,.08)" class="zh-only">
-    很榮幸各位能光臨，當晚不需要準備禮物。希望邀請每位賓客協助分擔場地費 <strong style="color:var(--gold-light);font-size:16px">$1,500</strong>（當天現場轉帳或付現皆可）。每位賓客將獲得 <strong style="color:var(--gold-light)">3杯免費調酒</strong>，不喝酒的朋友也有無酒精特調可選。
   </div>
 
   <!-- INFO GRID -->
@@ -308,74 +303,10 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     </div>
   </div>
 
-  <!-- GAME -->
-  <div class="section">
-    <div class="section-header">
-      <span class="section-num">II</span>
-      <div class="section-line"></div>
-      <span class="section-title en-only">VEIL &amp; BLADE</span>
-      <span class="section-title-zh zh-only">面紗與刃</span>
-      <div class="section-line"></div>
-    </div>
-    <div class="game-intro en-only">
-      Upon arrival, each guest enters <em>Veil &amp; Blade</em>. You have two bodyguards to find, one target to hunt, and somewhere in the room — one assassin is already looking for you. Your mission begins the moment you walk through the door.
-    </div>
-    <div class="game-intro game-intro-zh zh-only">
-      入場之際，每位賓客即進入《面紗與刃》。你有兩位護衛需要找到，一個目標需要追蹤，而房間某處，一名刺客已開始尋找你。任務從你踏入門的那一刻起算。
-    </div>
-    <div class="role-grid">
-      <div class="role-card">
-        <div class="role-icon">🛡</div>
-        <div class="role-title en-only">BODYGUARDS</div>
-        <div class="role-title-zh zh-only">護衛</div>
-        <div class="role-desc en-only">Your dossier contains hints about two guests. Find them and confirm with the host before your assassins reach you. Each hint describes the person — no names given.</div>
-        <div class="role-desc-zh zh-only">你的檔案中有兩位賓客的線索。在刺客抵達前，找到他們並向主人確認。每條線索描述人物特徵——不提供姓名。</div>
-      </div>
-      <div class="role-card">
-        <div class="role-icon">🎯</div>
-        <div class="role-title en-only">YOUR TARGET</div>
-        <div class="role-title-zh zh-only">你的目標</div>
-        <div class="role-desc en-only">You are also hunting one guest. Mingle, ask questions, deduce. Find them and bring them to the host. If they haven't secured their bodyguards yet — they pay the price.</div>
-        <div class="role-desc-zh zh-only">你同時追蹤一名賓客。社交、提問、推理。找到他們並帶到主人面前。若他們尚未找到護衛——後果自負。</div>
-      </div>
-    </div>
-    <div class="punishment-box">
-      <div class="punishment-title en-only">⚠ PUNISHMENT SCHEDULE — WHISKEY POUR</div>
-      <div class="punishment-title-zh zh-only">⚠ 懲罰規則 — 威士忌直灌</div>
-      <div class="p-row">
-        <span class="p-cond en-only">Both bodyguards confirmed before assassins find you</span>
-        <span class="p-cond-zh zh-only">在被刺客找到前確認兩位護衛</span>
-        <span class="p-result">SAFE ✓</span>
-      </div>
-      <div class="p-row">
-        <span class="p-cond en-only">Only 1 bodyguard confirmed in time</span>
-        <span class="p-cond-zh zh-only">僅及時確認一位護衛</span>
-        <span class="p-result" style="color:#FFB0B0">3 SEC 🥃</span>
-      </div>
-      <div class="p-row">
-        <span class="p-cond en-only">No bodyguards — assassins reached you first</span>
-        <span class="p-cond-zh zh-only">未找到護衛，被刺客先找到</span>
-        <span class="p-result" style="color:#FF8080">6 SEC 🥃🥃</span>
-      </div>
-      <div class="p-row">
-        <span class="p-cond en-only">Wrong target identified</span>
-        <span class="p-cond-zh zh-only">誤認目標</span>
-        <span class="p-result" style="color:#FFB0B0">3 SEC 🥃</span>
-      </div>
-      <div class="p-row">
-        <span class="p-cond en-only">Brought your own assassin as bodyguard</span>
-        <span class="p-cond-zh zh-only">將刺客誤認為護衛帶到主人面前</span>
-        <span class="p-result" style="color:#FF8080">INSTANT 6 SEC 🥃🥃</span>
-      </div>
-    </div>
-    <div class="game-note en-only">When your target is confirmed, they receive punishment based on their own bodyguard status at that moment.</div>
-    <div class="game-note-zh zh-only">當你的目標被確認時，懲罰依其當下護衛狀態而定。</div>
-  </div>
-
   <!-- DOSSIER -->
   <div class="section">
     <div class="section-header">
-      <span class="section-num">III</span>
+      <span class="section-num">II</span>
       <div class="section-line"></div>
       <span class="section-title en-only">YOUR DOSSIER</span>
       <span class="section-title-zh zh-only">你的密件檔案</span>
@@ -456,7 +387,7 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
 
   <div class="gallery-section" id="gallerySection" style="display:none">
     <div class="section-header">
-      <span class="section-num">IV</span>
+      <span class="section-num">III</span>
       <div class="section-line"></div>
       <span class="section-title en-only">NIGHT IN PHOTOS</span>
       <span class="section-title-zh zh-only" style="font-family:'Noto Serif TC',serif">當晚照片</span>
@@ -594,6 +525,8 @@ body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellips
     <div id="noPhotosMsgZh" style="display:none" class="no-photos zh-only">本次活動未找到你的標記照片。</div>
     <button class="dl-all-btn en-only" id="dlAllBtn" style="display:none" onclick="downloadAll()">⬇ DOWNLOAD ALL MY PHOTOS</button>
     <button class="dl-all-btn zh-only" id="dlAllBtnZh" style="display:none" onclick="downloadAll()" style="font-family:'Noto Serif TC',serif">⬇ 下載所有我的照片</button>
+    <a class="dl-all-btn en-only" href="https://drive.google.com/drive/folders/13CgdsWmgVhM2Q-OFsrnpvSR3iZB_rPKE?usp=sharing" target="_blank" rel="noopener" style="text-decoration:none;margin-top:16px">📁 BROWSE THE FULL PHOTO FOLDER</a>
+    <a class="dl-all-btn zh-only" href="https://drive.google.com/drive/folders/13CgdsWmgVhM2Q-OFsrnpvSR3iZB_rPKE?usp=sharing" target="_blank" rel="noopener" style="text-decoration:none;margin-top:16px;font-family:'Noto Serif TC',serif">📁 瀏覽完整相簿資料夾</a>
   </div>
 
   <script>
