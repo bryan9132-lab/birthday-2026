@@ -1,6 +1,6 @@
 # 🕵️ Classified Dossier — Bryan's 33rd Birthday Invitation
 
-A bilingual (English / 繁體中文), single-page invitation site built for a spy-themed 33rd birthday celebration at Onns Shisha Bar, Taipei. Guests unlock a personalized "dossier" with a private access code to reveal party details, dress code guidance, and a photo gallery.
+A bilingual (English / Mandarin), single-page invitation site built for a spy-themed 33rd birthday celebration at Onns Shisha Bar, Taipei. Guests unlock a personalized "dossier" with a private access code to reveal party details, dress code guidance, and a photo gallery.
 
 **🔗 Live site:** https://birthday-2026-production-98cb.up.railway.app/
 
